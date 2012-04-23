@@ -1,0 +1,67 @@
+/* 
+	AUTHOR: tiheum
+	WEBSITE: http://tiheum.deviantart.com
+	LICENSE: GPL
+	DESCRIPTION: Ice Cream Sandwich (Android 4) theme for gtk3 apps.
+*/
+
+/* default color scheme */
+@define-color bg_color #f2f2f2;
+@define-color fg_color #2c2c2c;
+@define-color base_color #ffffff;
+@define-color text_color #2c2c2c;
+@define-color selected_bg_color #0099cc;
+@define-color selected_fg_color #ffffff;
+@define-color tooltip_bg_color #F5F5B5;
+@define-color tooltip_fg_color #2c2c2c;
+
+/* other color schemes could simply override these */
+@define-color theme_bg_color @bg_color;
+@define-color theme_fg_color @fg_color;
+@define-color theme_base_color @base_color;
+@define-color theme_text_color @text_color;
+@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_fg_color @tooltip_fg_color;
+
+/* misc colors used by gtk+ */
+@define-color info_fg_color rgb (181, 171, 156);
+@define-color info_bg_color rgb (255, 236, 192);
+@define-color warning_fg_color rgb (173, 120, 41);
+@define-color warning_bg_color rgb (255, 189, 33);
+@define-color question_fg_color rgb (105, 140, 153);
+@define-color question_bg_color rgb (168, 223, 244);
+@define-color error_fg_color rgb (166, 38, 38);
+@define-color error_bg_color rgb (255, 68, 68);
+@define-color link_color #0099cc;
+@define-color error_color #cc0000;
+
+/* theme common colors */
+@define-color button_bg_color shade (@bg_color, 1.06);
+@define-color button_insensitive_bg_color shade (@bg_color, 0.95);
+@define-color dark_bg_color #3f3f3f;
+@define-color dark_fg_color #e0e0e0;
+@define-color transparent rgba (0, 0, 0, 0);
+
+/* ICS colors */
+@define-color toolbar_gradient_base #d4d4d4;
+@define-color toolbar_gradient_final #e0e0e0;
+@define-color toolbar_border #ccc;
+@define-color selected_bg_color_alt #a3d7ea;
+@define-color selected_fg_color_alt #2c2c2c;
+@define-color selected_bg_color_alt2 #33b5e5;
+@define-color titlebar_color #282828;
+@define-color text_color_primary_light #111;
+@define-color text_color_secondary_light #ccc;
+@define-color text_color_primary_dark #eee;
+@define-color text_color_secondary_dark #888;
+@define-color button_color #cecece;
+@define-color button_focus_color #a3d7ea;
+@define-color button_pressed_color #6BC9EC;
+
+@import url("gtk-widgets.css");
+@import url("apps/gnome-panel.css");
+@import url("apps/gnome-applications.css");
+@import url("apps/nautilus.css");
+@import url("apps/unity.css");

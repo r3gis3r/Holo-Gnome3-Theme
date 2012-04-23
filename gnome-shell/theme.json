@@ -1,0 +1,10 @@
+{ 
+   "shell-theme": {
+   "name": "Holo",
+   "author": "tiheum",
+   "version": "1.0",
+   "type":   "custom",
+   "thumbnail": "preview-holo.jpg",
+   "url": "http://tiheum.deviantart.com"
+    }
+}

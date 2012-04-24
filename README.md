@@ -1,7 +1,6 @@
 Holo theme for gnome shell & gtk 3.4
 
- > Based on the excellent work from Tiheum.    
- [Holo theme on DeviantArt](http://tiheum.deviantart.com/art/Holo-280076980)     
+ > Based on the excellent work from Tiheum : [Holo theme on DeviantArt](http://tiheum.deviantart.com/art/Holo-280076980)     
  > This repository helps to have Gnome 3.4 working with this Holo theme.     
  > It doesn't aim to be backward compatible with Gnome 3.2.
 

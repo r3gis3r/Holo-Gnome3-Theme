@@ -1482,14 +1482,18 @@ GtkTreeView .entry {
 	-unico-inner-stroke-width: 1;
 }
 
-GtkTreeView row:nth-child(even),
-GtkTreeView row:nth-child(even):hover {
+GtkTreeView row:nth-child(even)/*,
+GtkTreeView row:nth-child(even):hover*/ {
 	background-color: shade (@base_color, 1.0);
 }
 
-GtkTreeView row:nth-child(odd),
-GtkTreeView row:nth-child(odd):hover {
+GtkTreeView row:nth-child(odd)/*,
+GtkTreeView row:nth-child(odd):hover*/ {
 	background-color: shade (@base_color, 0.97);
+}
+
+GtkTreeView row:hover {
+    background-color : alpha(@selected_bg_color, 0.03);
 }
 
 /************

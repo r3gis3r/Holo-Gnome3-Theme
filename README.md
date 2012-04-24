@@ -14,3 +14,12 @@ Remember that the Holo theme is released under GPLv3 license.
 And don't hesitate to share if you modify for your own needs ;).
 
 Et un grand merci à Tiheum pour toutes ses icones/thèmes !
+
+Installation
+============
+
+Install git with : 
+
+    sudo apt-get install git
+
+

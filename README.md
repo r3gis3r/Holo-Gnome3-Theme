@@ -42,8 +42,8 @@ To do so use following command lines :
     unzip roboto.zip -d ~/.fonts
 
 If you plan to use _Roboto Light_ instead of _Roboto_, you'll notice weird behavior from apps such as Thunderbird and Pidgin.     
-It's because they try to use _Roboto_ instead of Light variant and it will appear bold for you.    
-So, you have to force the resolution of _Roboto_ into _Roboto Light_ instead of _Roboto Medium_.
+It's because they try to use _Roboto_ in weight normal which resolves to Medium style and it will appear bold for you.    
+So, you have to force the resolution of _Roboto_ into _Roboto Light_ for _normal_ weight.
 So edit your ```~/.fonts.conf``` and fill with :
 
 ```xml
@@ -54,11 +54,15 @@ So edit your ```~/.fonts.conf``` and fill with :
         <test name="family" qual="any">
             <string>Roboto</string>
         </test>
-        <edit mode="assign" name="family">
-            <string>Roboto Light</string>
+        <test name="weight" qual="more_eq">
+            <string>80</string>
+        </test>
+        <edit mode="assign" name="style">
+            <string>Light</string>
         </edit>
     </match>
 </fontconfig>
+
 ```
 
 Finally, you can then use gnome-tweak-tool to setup everything.

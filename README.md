@@ -1,18 +1,33 @@
+Holo theme for gnome shell & gtk 3.4
+
+ > Based on the excellent work from Tiheum : [Holo theme on DeviantArt](http://tiheum.deviantart.com/art/Holo-280076980)     
+ > This repository helps to have Gnome 3.4 working with this Holo theme.     
+ > It doesn't aim to be backward compatible with Gnome 3.2.
+
 Et un grand merci à Tiheum pour toutes ses icones/thèmes !
 
 Installation
 ============
 
-Install git with : 
+To install it directly using command line :
 
+    # Install git (if not already)
     sudo apt-get install git
+    # Create .themes folder (if not already)
+    mkdir ~/.themes
+    # Checkout git repo
+    cd ~/.themes && git clone git://github.com/r3gis3r/Holo-Gnome3-Theme.git
+    # Optionally link root theme folder to your folder
+    sudo ln -s ~/.themes ~root/.themes
 
 
-=======
 Extra configuration
 ===================
 ## Firefox
-If you are a Firefox user, you may also appreaciate [~illusionmist Holo Stylish script for Firefox](http://illusionmist.deviantart.com/art/Holo-Theme-for-Firefox-294051732)
+If you are a Firefox user, you may also appreciate [~illusionmist Holo Stylish script for Firefox](http://illusionmist.deviantart.com/art/Holo-Theme-for-Firefox-294051732)
+
+## Thunderbird
+And the thunderbird script [my Holo Stylish script for Thunderbird](http://userstyles.org/styles/64593/holo-theme-for-thunderbird-linux-thunderbir-11?r=1335276031)
 
 ## Fonts
 You may also want to install Roboto fonts

@@ -54,11 +54,11 @@ So edit your ```~/.fonts.conf``` and fill with :
         <test name="family" qual="any">
             <string>Roboto</string>
         </test>
-        <test name="weight" qual="more_eq">
-            <string>80</string>
+        <test name="weight" compare="less_eq">
+            <const>normal</const>
         </test>
-        <edit mode="assign" name="style">
-            <string>Light</string>
+        <edit mode="assign" name="weight">
+            <const>light</const>
         </edit>
     </match>
 </fontconfig>

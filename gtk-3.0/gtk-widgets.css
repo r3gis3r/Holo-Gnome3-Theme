@@ -1225,6 +1225,7 @@ GtkSwitch.trough:active:insensitive {
 GtkSwitch.slider, GtkSwitch.slider:insensitive {
   engine: adwaita;
   background-color: @transparent;
+  color : @transparent;
   background-image: url("assets/blank.png");
   -adwaita-switch-grip-color: @transparent;
 }

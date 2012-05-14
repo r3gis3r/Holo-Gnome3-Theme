@@ -286,7 +286,7 @@ style "murrine-menu-item" = "murrine-wider" {
 	xthickness = 2
 	ythickness = 3
 
-	bg[SELECTED] = "#FF0000"
+	bg[SELECTED] = "#0099CC" #"FF0000"
 	bg[PRELIGHT] = @selected_bg_color
 	fg[PRELIGHT] = @selected_fg_color
 

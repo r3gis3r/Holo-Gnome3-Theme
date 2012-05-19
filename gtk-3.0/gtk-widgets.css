@@ -333,37 +333,40 @@ GtkComboBox.combobox-entry .button *:insensitive {
  * cell and row *
  ****************/
 .cell {
-	border-radius: 0;
-	border-width: 0;
+    border-radius: 0;
+    border-width: 0;
 }
 
 .cell:selected {
+    background-color: @selected_bg_color_alt;
+    color: @selected_fg_color_alt;
 }
 
 row {
-  text-shadow: none;
+    text-shadow: none;
 }
 
 row:hover {
 }
 
 row:insensitive {
-  background-color: @selected_bg_color_alt;
+    background-color: @selected_bg_color_alt;
 }
 
 row:selected:focused {
-	border-width: 0;
-	border-style: solid;
-	background-color: @selected_bg_color;
-  text-shadow: none;
+    border-width: 0;
+    border-style: solid;
+    background-color: @selected_bg_color;
+    color:@selected_fg_color;
+    text-shadow: none;
 }
 
 row:selected {
-	border-width: 0;
-	border-style: solid;
-	background-color: @selected_bg_color_alt;
-  color: @selected_fg_color_alt;
-  text-shadow: none;
+    border-width: 0;
+    border-style: solid;
+    background-color: @selected_bg_color_alt;
+    color: @selected_fg_color_alt;
+    text-shadow: none;
 }
 
 /*******************

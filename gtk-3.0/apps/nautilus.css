@@ -78,7 +78,7 @@ NautilusFloatingBar .button {
 
 /* sidebar */
 NautilusWindow .sidebar,
-NautilusWindow .sidebar .view {
+NautilusWindow .sidebar > .view {
 	background-color: @bg_color;
 }
 

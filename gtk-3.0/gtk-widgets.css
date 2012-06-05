@@ -536,6 +536,7 @@ GtkEntry {
   engine: adwaita;
   border-image: url("assets/entry.svg") 0 1 1 1 / 0 1 1 1 stretch;
   background-color: @transparent;
+  padding : 0px 3px;
 }
 
 GtkEntry:selected,
@@ -1498,6 +1499,10 @@ GtkTreeView row:nth-child(odd):hover*/ {
 
 GtkTreeView row:hover {
     background-color : alpha(@selected_bg_color, 0.03);
+}
+
+GtkTreeView GtkEntry {
+    background-color : @selected_bg_color_alt;
 }
 
 /************

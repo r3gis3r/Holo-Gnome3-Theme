@@ -886,11 +886,13 @@ GtkProgressBar {
 
 .progressbar,
 .progressbar row,
+.progressbar row:nth-child(odd),
+.progressbar row:nth-child(even),
 .progressbar row:hover,
 .progressbar row:selected,
 .progressbar row:selected:focused {
   background-color: @selected_bg_color_alt2;
-	border-width: 0;
+  border-width: 0;
   -unico-inner-stroke-color: @bg_color;
   -unico-inner-stroke-width: 2 0;
 }
@@ -909,7 +911,7 @@ GtkProgressBar {
 .trough row:selected,
 .trough row:selected:focused {
   background-color: shade(@bg_color, 0.85);
-	border-width: 0;
+  border-width: 0;
   -unico-inner-stroke-color: @bg_color;
   -unico-inner-stroke-width: 2 0;
 }
@@ -1099,7 +1101,7 @@ GtkComboBox .button.separator {
 }
 
 .sidebar row:hover {
-	background-color: alpha (@bg_color, 0.0);
+	/*background-color: alpha (@bg_color, 0.0);*/
 }
 
 .sidebar .frame {
@@ -1487,15 +1489,14 @@ GtkTreeView .entry {
 	-unico-inner-stroke-width: 1;
 }
 
-GtkTreeView row:nth-child(even)/*,
-GtkTreeView row:nth-child(even):hover*/ {
+GtkTreeView row:nth-child(even) {
 	background-color: shade (@base_color, 1.0);
 }
 
-GtkTreeView row:nth-child(odd)/*,
-GtkTreeView row:nth-child(odd):hover*/ {
+GtkTreeView row:nth-child(odd) {
 	background-color: shade (@base_color, 0.97);
 }
+
 
 GtkTreeView row:hover {
     background-color : alpha(@selected_bg_color, 0.03);

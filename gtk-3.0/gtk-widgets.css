@@ -994,8 +994,16 @@ GtkScale.mark {
   border-image: url("assets/scrollbar-trough.svg") 4 5 4 6 / 4 5 4 6 stretch;
 }
 
+.scrollbar.horizontal.trough {
+  border-image: url("assets/scrollbar-horizontal-trough.svg") 6 4 5 4 / 6 4 5 4 stretch;
+}
+
 .scrollbar.trough:insensitive {
   border-image: url("assets/scrollbar-trough-insensitive.svg") 4 5 4 6 / 4 5 4 6 stretch;
+}
+
+.scrollbar.horizontal.trough:insensitive {
+  border-image: url("assets/scrollbar-horizontal-trough-insensitive.svg") 6 4 5 4 / 6 4 5 4 stretch;
 }
 
 GtkScrolledWindow .scrollbar.trough {
@@ -1009,12 +1017,25 @@ GtkScrolledWindow .scrollbar.trough {
   border-image: url("assets/scrollbar-slider.svg") 4 5 4 6 / 4 5 4 6 stretch;
 }
 
+.scrollbar.slider.horizontal {
+  border-image: url("assets/scrollbar-horizontal-slider.svg") 6 4 5 4 / 6 4 5 4 stretch;
+}
+
+
 .scrollbar.slider:prelight, .scrollbar.slider:prelight:active {
   border-image: url("assets/scrollbar-slider-active.svg") 4 5 4 6 / 4 5 4 6 stretch;
 }
 
+.scrollbar.slider.horizontal:prelight, .scrollbar.slider.horizontal:prelight:active {
+  border-image: url("assets/scrollbar-horizontal-slider-active.svg") 6 4 5 4 / 6 4 5 4 stretch;
+}
+
 .scrollbar.slider:insensitive {
   border-image: url("assets/scrollbar-slider-insensitive.svg") 4 5 4 6 / 4 5 4 6 stretch;
+}
+
+.scrollbar.slider.horizontal:insensitive {
+  border-image: url("assets/scrollbar-horizontal-slider-insensitive.svg") 6 4 5 4 / 6 4 5 4 stretch;
 }
 
 /* overlay scrollbar */

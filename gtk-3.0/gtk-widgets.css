@@ -908,11 +908,16 @@ GtkProgressBar {
 
 .progressbar row:hover,
 .trough row:hover {
-  -unico-inner-stroke-color: shade (@bg_color, 1.02);
+  -unico-inner-stroke-color: shade (@bg_color, 0.97);
 }
 
 .progressbar row:selected,
 .trough row:selected {
+  -unico-inner-stroke-color: @selected_bg_color_alt;
+}
+
+.progressbar row:selected:focused,
+.trough row:selected:focused {
   -unico-inner-stroke-color: @selected_bg_color;
 }
 .progressbar.vertical,
@@ -926,6 +931,8 @@ GtkProgressBar {
 .trough,
 .trough row,
 .trough row:hover,
+.trough row:nth-child(odd),
+.trough row:nth-child(even),
 .trough row:selected,
 .trough row:selected:focused {
   background-color: shade(@bg_color, 0.85);

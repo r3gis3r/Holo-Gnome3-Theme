@@ -893,10 +893,28 @@ GtkProgressBar {
 .progressbar row:selected:focused {
   background-color: @selected_bg_color_alt2;
   border-width: 0;
-  -unico-inner-stroke-color: @bg_color;
   -unico-inner-stroke-width: 2 0;
 }
 
+.progressbar row:nth-child(even),
+.trough row:nth-child(even) {
+  -unico-inner-stroke-color: shade(@base_color, 1.0);
+}
+
+.progressbar row:nth-child(even),
+.trough row:nth-child(even) {
+  -unico-inner-stroke-color: shade(@base_color, 0.97);
+}
+
+.progressbar row:hover,
+.trough row:hover {
+  -unico-inner-stroke-color: shade (@bg_color, 1.02);
+}
+
+.progressbar row:selected,
+.trough row:selected {
+  -unico-inner-stroke-color: @selected_bg_color;
+}
 .progressbar.vertical,
 .progressbar.vertical row,
 .progressbar.vertical row:hover,
@@ -912,7 +930,6 @@ GtkProgressBar {
 .trough row:selected:focused {
   background-color: shade(@bg_color, 0.85);
   border-width: 0;
-  -unico-inner-stroke-color: @bg_color;
   -unico-inner-stroke-width: 2 0;
 }
 

@@ -891,7 +891,6 @@ GtkProgressBar {
     border-radius: 0;
     border-width: 0;
     padding: 0;
-
 }
 
 .progressbar,
@@ -952,33 +951,41 @@ GtkProgressBar {
 
 GtkScale {
     -GtkRange-slider-width: 18;
-    -GtkRange-trough-border: 1;
+    -GtkRange-trough-border: 0;
     -GtkScale-slider-length: 18;
+    -GtkWidget-focus-line-width: 0;
 }
 
 GtkScale.trough {
-    engine: unico;
-    background-color:transparent;
-    border-radius: 0;
-    border-style: solid;
-    border-color: transparent;
+  border-radius: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px;
+  background-color: transparent;
 }
 
-GtkScale.trough.vertical {
-    border-width: 9px 8px;
-    background-image: -gtk-gradient (linear,
-                                     left top, right top,
-                                     from (shade (@bg_color, 0.85)),
-                                     to (shade (@bg_color, 0.9)));
+GtkScale.trough,
+GtkScale.trough.highlight:insensitive {
+  background-position : 0 50%;
+  background-repeat : repeat-x;
+  background-image : url("assets/trough-horizontal-inactive.svg");
 }
 
-GtkScale.trough.horizontal {
-    border-width: 8px 9px;
-    background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade (@bg_color, 0.85)),
-                                     to (shade (@bg_color, 0.9)));
+GtkScale.trough.highlight {
+  background-image : url("assets/trough-horizontal-active.svg");
 }
+
+GtkScale.trough.vertical,
+GtkScale.trough.vertical.highlight:insensitive {
+  background-position : 50% 0;
+  background-repeat : repeat-y;
+  background-image : url("assets/trough-vertical-inactive.svg");
+}
+
+GtkScale.trough.vertical.highlight {
+  background-image : url("assets/trough-vertical-active.svg");
+}
+
 
 GtkScale.slider {
     background-color:transparent;
@@ -987,6 +994,12 @@ GtkScale.slider {
 
 GtkScale.slider:hover {
     background-image: url("assets/scale-slider-hover.svg");
+}
+GtkScale.slider:active {
+    background-image: url("assets/scale-slider-active.svg");
+}
+GtkScale.slider:insensitive {
+    background-image: url("assets/scale-slider-disabled.svg");
 }
 
 GtkScale.mark {

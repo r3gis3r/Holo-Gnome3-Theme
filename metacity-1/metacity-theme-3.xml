@@ -42,7 +42,7 @@
 	<distance name="right_titlebar_edge" value="6"/>
 </frame_geometry>
 
-<frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
+<frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="0" rounded_top_right="0">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
 	<distance name="left_titlebar_edge" value="6"/>
@@ -53,15 +53,15 @@
 	<distance name="bottom_height" value="0" />
 </frame_geometry>
 
-<frame_geometry name="tiled_left" title_scale="medium" rounded_top_left="false" rounded_top_right="false" parent="max">
+<frame_geometry name="tiled_left" title_scale="medium" rounded_top_left="0" rounded_top_right="0" parent="max">
 	<distance name="right_width" value="1" />
 </frame_geometry>
 
-<frame_geometry name="tiled_right" title_scale="medium" rounded_top_left="false" rounded_top_right="false" parent="max">
+<frame_geometry name="tiled_right" title_scale="medium" rounded_top_left="0" rounded_top_right="0" parent="max">
 	<distance name="left_width" value="1" />
 </frame_geometry>
 
-<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="false" rounded_top_right="false">
+<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="0" rounded_top_right="0">
 	<distance name="title_vertical_pad" value="7"/>
 	<border name="title_border" left="10" right="10" top="0" bottom="1"/>
 	<border name="button_border" left="0" right="0" top="0" bottom="2"/>
@@ -75,7 +75,7 @@
 <frame_geometry name="nobuttons" hide_buttons="true" parent="normal">
 </frame_geometry>
 
-<frame_geometry name="borderless" has_title="false" rounded_top_left="false" rounded_top_right="false" parent="normal" >
+<frame_geometry name="borderless" has_title="false" rounded_top_left="0" rounded_top_right="0" parent="normal" >
 	<distance name="left_width" value="1" />
 	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
@@ -84,11 +84,11 @@
 	<distance name="title_vertical_pad" value="1" />
 </frame_geometry>
 
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="small">
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="0" rounded_top_right="0" parent="small">
 	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 
-<frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="small">
+<frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="0" rounded_top_right="0" parent="small">
 	<distance name="title_vertical_pad" value="0"/>
 </frame_geometry>
 
@@ -1150,13 +1150,13 @@
 	<frame focus="no" state="shaded" style="normal_unfocused"/>
 	<frame focus="yes" state="maximized_and_shaded" style="normal_max_shaded_focused"/>
 	<frame focus="no" state="maximized_and_shaded" style="normal_max_shaded_unfocused"/>
-	<frame version=">= 3.3"focus="yes" state="tiled_left" style="tiled_left_focused"/>
-	<frame version=">= 3.3"focus="no" state="tiled_left" style="tiled_left_unfocused"/>
-	<frame version=">= 3.3"focus="yes" state="tiled_right" style="tiled_right_focused"/>
-	<frame version=">= 3.3"focus="no" state="tiled_right" style="tiled_right_unfocused"/>
-	<frame version=">= 3.3"focus="yes" state="tiled_left_and_shaded" style="tiled_left_focused"/>
-	<frame version=">= 3.3"focus="no" state="tiled_left_and_shaded" style="tiled_left_unfocused"/>
-	<frame version=">= 3.3"focus="yes" state="tiled_right_and_shaded" style="tiled_right_focused"/>
+	<frame version=">= 3.3" focus="yes" state="tiled_left" style="tiled_left_focused"/>
+	<frame version=">= 3.3" focus="no" state="tiled_left" style="tiled_left_unfocused"/>
+	<frame version=">= 3.3" focus="yes" state="tiled_right" style="tiled_right_focused"/>
+	<frame version=">= 3.3" focus="no" state="tiled_right" style="tiled_right_unfocused"/>
+	<frame version=">= 3.3" focus="yes" state="tiled_left_and_shaded" style="tiled_left_focused"/>
+	<frame version=">= 3.3" focus="no" state="tiled_left_and_shaded" style="tiled_left_unfocused"/>
+	<frame version=">= 3.3" focus="yes" state="tiled_right_and_shaded" style="tiled_right_focused"/>
 	<frame version=">= 3.3" focus="no" state="tiled_right_and_shaded" style="tiled_right_unfocused"/>
 </frame_style_set>
 
